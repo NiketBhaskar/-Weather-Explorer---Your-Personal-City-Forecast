@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spalsh_screen"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/iv_whiteCloud"
+        android:layout_width="211dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="268dp"
+        android:src="@drawable/white_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:fontFamily="@font/merriweathersans_bold"
+        android:text="@string/SplashScreenText"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/iv_whiteCloud"
+        app:layout_constraintStart_toStartOf="@id/iv_whiteCloud"
+        app:layout_constraintTop_toBottomOf="@id/iv_whiteCloud"/>
+    <TextView
+        android:id="@+id/tv_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/merriweathersans_medium"
+        android:text="@string/design_by"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/iv_whiteCloud"
+        app:layout_constraintStart_toStartOf="@id/iv_whiteCloud"
+        app:layout_constraintBottom_toTopOf="@id/tv_text3"/>
+    <TextView
+        android:id="@+id/tv_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="67dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/merriweathersans_medium"
+        android:text="@string/revia_apps"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/iv_whiteCloud"
+        app:layout_constraintStart_toStartOf="@id/iv_whiteCloud"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
